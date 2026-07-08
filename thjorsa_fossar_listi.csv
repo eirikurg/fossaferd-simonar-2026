@@ -1,0 +1,27 @@
+﻿name,river,group,lat,lon,order,accuracy,osm_id,source,note
+Hvanngiljafoss,Þjórsá,Meginfarvegur,64.3920481,-19.1111347,1,OSM punktur,6100754123,OpenStreetMap/Overpass,Einnig nefndur Kjálkaversfoss í heimildum.
+Dynkur,Þjórsá,Meginfarvegur,64.3387053,-19.192984,2,OSM punktur,616882848,OpenStreetMap/Overpass,Einnig nefndur Búðarhálsfoss.
+Gljúfurleitarfoss,Þjórsá,Meginfarvegur,64.3172972,-19.2712413,3,OSM punktur,6100753605,OpenStreetMap/Overpass,
+Tröllkonuhlaup,Þjórsá,Meginfarvegur,64.0700203,-19.774764,4,OSM punktur,4073618796,OpenStreetMap/Overpass,
+Þjófafoss,Þjórsá,Meginfarvegur,64.0567424,-19.8665798,5,OSM punktur,1818884433,OpenStreetMap/Overpass,
+Krókadælarflúð,Þjórsá,Meginfarvegur,64.0261524,-20.3860528,6,OSM punktur,4071835480,OpenStreetMap/Overpass,Flúð/fossamerking í OSM.
+Árnesflúðir,Þjórsá,Meginfarvegur,64.0211807,-20.409227,7,OSM punktur,4071835474,OpenStreetMap/Overpass,Flúðir við Árnes.
+Búðafoss,Þjórsá,Meginfarvegur,64.0144706,-20.2705131,8,OSM punktur,1535157856,OpenStreetMap/Overpass,
+Hestafoss,Árneskvísl/Þjórsá,Meginfarvegur,64.0066566,-20.3362125,9,OSM punktur,1535157651,OpenStreetMap/Overpass,Við kvísl/eyju í Þjórsá.
+Urriðafoss,Þjórsá,Meginfarvegur,63.9249027,-20.6719415,10,OSM punktur,331229375,OpenStreetMap/Overpass,
+Fagrifoss,Kaldakvísl,Þverá,64.3015008,-19.0249646,,OSM punktur,998945207,OpenStreetMap/Overpass,Valinn er OSM-punkturinn á Kaldakvísl; annar Fagrifoss í Skaftá er útilokaður.
+Gjárfoss,Rauðá,Þverá,64.1513008,-19.7365804,,OSM punktur,1818885083,OpenStreetMap/Overpass,Í Gjáin; Rauðá er í Þjórsárdal.
+Granni,Fossá,Þverá,64.2091746,-19.6832932,,OSM punktur,3706339118,OpenStreetMap/Overpass,Við hlið Háafoss.
+Hjálparfoss,Fossá við Þjórsá,Þverá,64.1158696,-19.8497831,,OSM punktur,281303304,OpenStreetMap/Overpass,Nálægt ármótum Fossár og Þjórsár.
+Háifoss,Fossá,Þverá,64.2079214,-19.686991,,OSM punktur,438715630,OpenStreetMap/Overpass,Fossá rennur í Þjórsá.
+Sigöldufoss,Tungnaá,Þverá,64.1696683,-19.129225,,OSM punktur,4264266844,OpenStreetMap/Overpass,
+Sigöldugljúfur,Tungnaá,Þverá,64.1600944,-19.1166298,,OSM punktur,1829037327,OpenStreetMap/Overpass,OSM merkir þetta sem fossapunkt í gljúfrinu.
+Tungnaárfellsfoss,Tungnaá,Þverá,64.1166943,-19.0964309,,OSM punktur,930057986,OpenStreetMap/Overpass,
+Ónefndur foss við Granna,Fossá,Ónefndur OSM-punktur,64.209531,-19.683893,,"OSM punktur, ónefndur",3706339114,OpenStreetMap/Overpass,Ónefndur fossapunktur í OSM innan Þjórsár/Fossár svæðis.
+Ónefndur foss við Granna,Fossá,Ónefndur OSM-punktur,64.209956,-19.683655,,"OSM punktur, ónefndur",3706339113,OpenStreetMap/Overpass,Ónefndur fossapunktur í OSM innan Þjórsár/Fossár svæðis.
+Ónefndur foss við Háafossgljúfur,Fossá,Ónefndur OSM-punktur,64.208155,-19.687015,,"OSM punktur, ónefndur",7170650932,OpenStreetMap/Overpass,Ónefndur fossapunktur í OSM innan Þjórsár/Fossár svæðis.
+Ónefndur foss í Fossá,Fossá,Ónefndur OSM-punktur,64.212007,-19.684455,,"OSM punktur, ónefndur",281303375,OpenStreetMap/Overpass,Ónefndur fossapunktur í OSM innan Þjórsár/Fossár svæðis.
+Ónefndur foss í Fossá,Fossá,Ónefndur OSM-punktur,64.212383,-19.684936,,"OSM punktur, ónefndur",7170650940,OpenStreetMap/Overpass,Ónefndur fossapunktur í OSM innan Þjórsár/Fossár svæðis.
+Ónefndur foss í Fossá,Fossá,Ónefndur OSM-punktur,64.21298,-19.685307,,"OSM punktur, ónefndur",3706339106,OpenStreetMap/Overpass,Ónefndur fossapunktur í OSM innan Þjórsár/Fossár svæðis.
+Ónefndur foss í Gjáin,Rauðá/Gjáin,Ónefndur OSM-punktur,64.150514,-19.734617,,"OSM punktur, ónefndur",3700435032,OpenStreetMap/Overpass,Ónefndur fossapunktur í OSM innan Þjórsár/Fossár svæðis.
+Ónefndur foss í Þverá,Þverá,Ónefndur OSM-punktur,64.118242,-20.011039,,"OSM punktur, ónefndur",5262033558,OpenStreetMap/Overpass,Ónefndur fossapunktur í OSM innan Þjórsár/Fossár svæðis.

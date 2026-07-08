@@ -1,0 +1,299 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -20.300916666666666,
+            64.02366666666667
+          ],
+          [
+            -20.070611111111113,
+            64.0675
+          ]
+        ]
+      },
+      "properties": {
+        "day": 1,
+        "date": "2026-07-23",
+        "label": "23. júlí",
+        "from": "Minna Hof",
+        "to": "Hagi",
+        "note": "Riðið frá Minna Hofi að Haga.",
+        "distance_km": 12.2,
+        "weather_lat": 64.045583,
+        "weather_lon": -20.185764,
+        "weather_place": "Minna Hof - Hagi",
+        "story": "Upphafsdagurinn liggur úr byggðinni á Skeiðum inn að Haga. Þetta er góður inngangur að Þjórsársvæðinu áður en leiðin fer innar í Þjórsárdal og afréttinn.",
+        "nearby_waterfalls": "Búðafoss (1.5 km); Hestafoss (2.6 km); Krókadælarflúð (4.2 km); Árnesflúðir (5.3 km)",
+        "sources": "",
+        "source_urls": "",
+        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -20.070611111111113,
+            64.0675
+          ],
+          [
+            -19.871571,
+            64.181214
+          ]
+        ]
+      },
+      "properties": {
+        "day": 2,
+        "date": "2026-07-24",
+        "label": "24. júlí",
+        "from": "Hagi",
+        "to": "Klettur",
+        "note": "Riðið frá Haga í fjallakofann Klett.",
+        "distance_km": 15.9,
+        "weather_lat": 64.124357,
+        "weather_lon": -19.971091,
+        "weather_place": "Hagi - Klettur",
+        "story": "Á leiðinni frá Haga í átt að Kletti er líklegt að Gaukshöfði/Hagafjall verði í sjónmáli. Heimildir um Þjórsárdal nefna Bringu og Gaukshöfða undir Hagafjalli, og dalinn sem svæði milli Búrfells/Þjórsár og Skriðufells. Þar eru líka kennileiti eins og Hjálparfoss og Þjófafoss í nágrenninu.",
+        "nearby_waterfalls": "Hjálparfoss (5.3 km)",
+        "sources": "Gaukshöfði / Hagafjall; Þjórsárdalur; Hjálparfoss",
+        "source_urls": "https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur; https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur; https://en.wikipedia.org/wiki/Hj%C3%A1lparfoss",
+        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -19.871571,
+            64.181214
+          ],
+          [
+            -19.348349,
+            64.295794
+          ]
+        ]
+      },
+      "properties": {
+        "day": 3,
+        "date": "2026-07-25",
+        "label": "25. júlí",
+        "from": "Klettur",
+        "to": "Gljúfurleit",
+        "note": "Riðið frá Kletti inn í Gljúfurleit.",
+        "distance_km": 28.3,
+        "weather_lat": 64.238504,
+        "weather_lon": -19.60996,
+        "weather_place": "Klettur - Gljúfurleit",
+        "story": "Frá Kletti inn í Gljúfurleit færist ferðin innar á Þjórsárdals- og afréttarsvæðið. Í Þjórsárdal eru Stöng, Gjáin og Háifoss meðal kunnustu staða; heimildir nefna einnig Vegghamra við forna Sprengisandsleið, þar sem fjallmenn Gnúpverja riðu til fjalla.",
+        "nearby_waterfalls": "Granni (1.3 km); Háifoss (1.4 km); Gljúfurleitarfoss (4.4 km); Gjárfoss (5.9 km)",
+        "sources": "Þjórsárdalur; Þjóðveldisbærinn Stöng; Gjáin; Háifoss; Sprengisandur",
+        "source_urls": "https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur; https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3%C3%B0veldisb%C3%A6rinn_St%C3%B6ng; https://en.wikipedia.org/wiki/Gj%C3%A1in; https://en.wikipedia.org/wiki/H%C3%A1ifoss; https://en.wikipedia.org/wiki/Sprengisandur",
+        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -19.348349,
+            64.295794
+          ],
+          [
+            -19.163858,
+            64.414005
+          ]
+        ]
+      },
+      "properties": {
+        "day": 4,
+        "date": "2026-07-26",
+        "label": "26. júlí",
+        "from": "Gljúfurleit",
+        "to": "Bjarnalækjabotnar",
+        "note": "Riðið úr Gljúfurleit inn í Bjarnalækjabotna.",
+        "distance_km": 15.9,
+        "weather_lat": 64.3549,
+        "weather_lon": -19.256104,
+        "weather_place": "Gljúfurleit - Bjarnalækjabotnar",
+        "story": "Leiðin frá Gljúfurleit í Bjarnalækjabotna liggur nær efri hluta Þjórsárkerfisins. Þar verða fossar á Þjórsá sjálfri meira áberandi í kortinu, og norðar tekur við heiða- og votlendissvæði sem tengist Þjórsárverum.",
+        "nearby_waterfalls": "Gljúfurleitarfoss (1.7 km); Hvanngiljafoss (3.5 km); Dynkur (3.5 km)",
+        "sources": "Þjórsárver / Ramsar; Heiðagæs og Þjórsárver",
+        "source_urls": "https://en.wikipedia.org/wiki/List_of_Ramsar_Sites; https://en.wikipedia.org/wiki/Pink-footed_goose",
+        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -19.163858,
+            64.414005
+          ],
+          [
+            -19.675803817487452,
+            64.1696153061112
+          ]
+        ]
+      },
+      "properties": {
+        "day": 6,
+        "date": "2026-07-28",
+        "label": "28. júlí",
+        "from": "Bjarnalækjabotnar",
+        "to": "Hólaskógur",
+        "note": "Riðið frá Bjarnalækjabotnum í Hólaskóg.",
+        "distance_km": 36.7,
+        "weather_lat": 64.29181,
+        "weather_lon": -19.419831,
+        "weather_place": "Bjarnalækjabotnar - Hólaskógur",
+        "story": "Á leiðinni frá Bjarnalækjabotnum í Hólaskóg er komið aftur niður að Þjórsárdal. Heimildir nefna að útsýnispallur við Háafoss sé vestan Stangarfells á leiðinni frá Hólaskógi, og Háifoss/Granni eru meðal sterkustu kennileita Fossárdals.",
+        "nearby_waterfalls": "Granni (3.2 km); Háifoss (3.3 km); Gljúfurleitarfoss (3.4 km); Hvanngiljafoss (3.5 km); Gjárfoss (3.6 km); Dynkur (4.6 km)",
+        "sources": "Þjórsárdalur; Háifoss",
+        "source_urls": "https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur; https://en.wikipedia.org/wiki/H%C3%A1ifoss",
+        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -19.675803817487452,
+            64.1696153061112
+          ],
+          [
+            -20.300916666666666,
+            64.02366666666667
+          ]
+        ]
+      },
+      "properties": {
+        "day": 7,
+        "date": "2026-07-29",
+        "label": "29. júlí",
+        "from": "Hólaskógur",
+        "to": "Minna Hof",
+        "note": "Riðið frá Hólaskógi heim að Minna Hofi.",
+        "distance_km": 34.4,
+        "weather_lat": 64.096641,
+        "weather_lon": -19.98836,
+        "weather_place": "Hólaskógur - Minna Hof",
+        "story": "Lokadagurinn liggur frá Hólaskógi heim að Minna Hofi og tengir hálendisbrúnina aftur við byggðina. Í nágrenni leiðarinnar eru Hjálparfoss og Þjófafoss; Hjálparfoss er við Fossá nálægt ármótum hennar og Þjórsár.",
+        "nearby_waterfalls": "Gjárfoss (0.4 km); Hjálparfoss (1.3 km); Búðafoss (1.6 km); Hestafoss (2.6 km); Krókadælarflúð (4.2 km); Háifoss (4.3 km)",
+        "sources": "Hjálparfoss; Þjórsárdalur",
+        "source_urls": "https://en.wikipedia.org/wiki/Hj%C3%A1lparfoss; https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur",
+        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.300916666666666,
+          64.02366666666667
+        ]
+      },
+      "properties": {
+        "name": "Minna Hof",
+        "kind": "Heimili / upphaf og endir",
+        "source": "Hnit frá notanda",
+        "stop_order": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -20.070611111111113,
+          64.0675
+        ]
+      },
+      "properties": {
+        "name": "Hagi",
+        "kind": "Bóndabær",
+        "source": "Hnit frá notanda",
+        "stop_order": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.871571,
+          64.181214
+        ]
+      },
+      "properties": {
+        "name": "Klettur",
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "stop_order": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.348349,
+          64.295794
+        ]
+      },
+      "properties": {
+        "name": "Gljúfurleit",
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "stop_order": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.163858,
+          64.414005
+        ]
+      },
+      "properties": {
+        "name": "Bjarnalækjabotnar",
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "stop_order": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.675803817487452,
+          64.1696153061112
+        ]
+      },
+      "properties": {
+        "name": "Hólaskógur",
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "stop_order": 6
+      }
+    }
+  ]
+}

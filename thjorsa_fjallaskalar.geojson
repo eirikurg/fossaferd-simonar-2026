@@ -1,0 +1,119 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.348349,
+          64.295794
+        ]
+      },
+      "properties": {
+        "name": "Gljúfurleit",
+        "lat": 64.295794,
+        "lon": -19.348349,
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "note": "",
+        "idx": 1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.163858,
+          64.414005
+        ]
+      },
+      "properties": {
+        "name": "Bjarnalækjabotnar",
+        "lat": 64.414005,
+        "lon": -19.163858,
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "note": "",
+        "idx": 2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -18.81839,
+          64.532503
+        ]
+      },
+      "properties": {
+        "name": "Tjarnarver",
+        "lat": 64.532503,
+        "lon": -18.81839,
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "note": "",
+        "idx": 3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.675803817487452,
+          64.1696153061112
+        ]
+      },
+      "properties": {
+        "name": "Hólaskógur",
+        "lat": 64.1696153061112,
+        "lon": -19.675803817487452,
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "note": "",
+        "idx": 4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.871571,
+          64.181214
+        ]
+      },
+      "properties": {
+        "name": "Klettur",
+        "lat": 64.181214,
+        "lon": -19.871571,
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "note": "",
+        "idx": 5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.981627,
+          64.197872
+        ]
+      },
+      "properties": {
+        "name": "Hallarmúli",
+        "lat": 64.197872,
+        "lon": -19.981627,
+        "kind": "Fjallaskáli",
+        "source": "Hnit frá notanda",
+        "note": "",
+        "idx": 6
+      }
+    }
+  ]
+}
