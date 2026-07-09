@@ -34580,6 +34580,15 @@
         "osm_id": 616882848,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Dynkur, einnig nefndur Búðarhálsfoss, er foss í Þjórsá norðan Sultartangalóns. Heimildir lýsa honum sem um 50 m fossi í þremur þrepum.",
+        "source_label": "Wikipedia: Dynkur",
+        "source_url": "https://de.wikipedia.org/wiki/Dynkur",
+        "image_url": "assets/fossar/dynkur.jpg",
+        "image_caption": "Dynkur í Þjórsá.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
+        "image_license_url": "",
+        "image_source_url": "",
         "idx": 2
       }
     },
@@ -34603,6 +34612,9 @@
         "osm_id": 6100753605,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Gljúfurleitarfoss er í Þjórsá á hálendinu norðan Sultartangalóns. Í opnum heimildum er hann lýstur sem fossi á Þjórsá í Þjórsárdalssvæðinu.",
+        "source_label": "Wikipedia: Gljufurleitarfoss",
+        "source_url": "https://it.wikipedia.org/wiki/Gljufurleitarfoss",
         "idx": 3
       }
     },
@@ -34649,6 +34661,15 @@
         "osm_id": 1818884433,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Þjófafoss er í Þjórsá austan Merkurhrauns, við suðvesturenda Búrfells. Aðgengi er meðal annars um malarslóða frá leið 26 eða frá leið 32 fram hjá Búrfellsstöð og Hjálparfossi.",
+        "source_label": "Wikipedia: Þjófafoss",
+        "source_url": "https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3fafoss",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Thjofafoss_burfell_2.jpg/960px-Thjofafoss_burfell_2.jpg",
+        "image_caption": "Þjófafoss og Búrfell séð frá Merkurhrauni.",
+        "image_credit": "Grunkhead",
+        "image_license": "CC BY-SA 3.0",
+        "image_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "image_source_url": "https://commons.wikimedia.org/wiki/File:Thjofafoss_burfell_2.jpg",
         "idx": 5
       }
     },
@@ -34718,6 +34739,13 @@
         "osm_id": 1535157856,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Búðafoss er foss á meginfarvegi Þjórsár, neðarlega í röð fossanna á leiðinni niður úr Þjórsárdal í átt að byggð.",
+        "image_url": "assets/fossar/budarfoss.jpg",
+        "image_caption": "Búðafoss í Þjórsá.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
+        "image_license_url": "",
+        "image_source_url": "",
         "idx": 8
       }
     },
@@ -34764,6 +34792,15 @@
         "osm_id": 331229375,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Urriðafoss er í neðri hluta Þjórsár. Hann er þekktur fyrir mjög mikið meðalrennsli og er meðal vatnsmestu fossa landsins.",
+        "source_label": "Wikipedia: Urriðafoss",
+        "source_url": "https://en.wikipedia.org/wiki/Urri%C3%B0afoss",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Urridafoss_april_2008_2.jpg/960px-Urridafoss_april_2008_2.jpg",
+        "image_caption": "Urriðafoss í Þjórsá.",
+        "image_credit": "Salvör Gissurardóttir",
+        "image_license": "Public domain",
+        "image_license_url": "",
+        "image_source_url": "https://commons.wikimedia.org/wiki/File:Urridafoss_april_2008_2.jpg",
         "idx": 10
       }
     },
@@ -34833,6 +34870,15 @@
         "osm_id": 3706339118,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Granni er nágranni Háafoss í Fossárdal. Fossá skiptist ofar í tvo arma og myndar þar Háafoss og Granna áður en vatnið sameinast aftur.",
+        "source_label": "Wikipedia: Granni Waterfall",
+        "source_url": "https://en.wikipedia.org/wiki/Granni_Waterfall",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Iceland_Haifoss_Waterfall_Panorama_2005-08-03.jpg/960px-Iceland_Haifoss_Waterfall_Panorama_2005-08-03.jpg",
+        "image_caption": "Háifoss og Granni í sama gljúfri.",
+        "image_credit": "G8w",
+        "image_license": "CC BY-SA 3.0",
+        "image_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "image_source_url": "https://commons.wikimedia.org/wiki/File:Iceland_Haifoss_Waterfall_Panorama_2005-08-03.jpg",
         "idx": 13
       }
     },
@@ -34856,6 +34902,15 @@
         "osm_id": 281303304,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Hjálparfoss er í hraunlendum norðan Heklu, nálægt ármótum Fossár og Þjórsár. Nafnið tengist því að þar fengu ferðamenn og hestar vatn og beit eftir erfiða leið yfir Sprengisand.",
+        "source_label": "Wikipedia: Hjálparfoss",
+        "source_url": "https://en.wikipedia.org/wiki/Hj%C3%A1lparfoss",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Hj%C3%A1lparfoss.JPG/960px-Hj%C3%A1lparfoss.JPG",
+        "image_caption": "Hjálparfoss í Fossá.",
+        "image_credit": "Bromr at Dutch Wikipedia",
+        "image_license": "CC BY-SA 3.0",
+        "image_license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "image_source_url": "https://commons.wikimedia.org/wiki/File:Hj%C3%A1lparfoss.JPG",
         "idx": 14
       }
     },
@@ -34879,6 +34934,15 @@
         "osm_id": 438715630,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Háifoss er í Fossá, þverá Þjórsár, og fellur um 122 m niður í Fossárdal. Granni er við hliðina á honum, og fossarnir eru meðal sterkustu kennileita Þjórsárdals.",
+        "source_label": "Wikipedia: Háifoss",
+        "source_url": "https://en.wikipedia.org/wiki/H%C3%A1ifoss",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Haifoss_fall_in_Iceland_2005.JPG/960px-Haifoss_fall_in_Iceland_2005.JPG",
+        "image_caption": "Háifoss í Fossá.",
+        "image_credit": "Chris 73",
+        "image_license": "CC BY-SA 3.0",
+        "image_license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "image_source_url": "https://commons.wikimedia.org/wiki/File:Haifoss_fall_in_Iceland_2005.JPG",
         "idx": 15
       }
     },
