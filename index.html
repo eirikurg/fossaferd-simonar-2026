@@ -116,6 +116,21 @@
     .legend div { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
     .swatch { width: 20px; height: 4px; border-radius: 99px; display: inline-block; }
     .dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+    .locate-control { margin-top: 10px !important; margin-right: 10px !important; }
+    .locate-button {
+      display: inline-flex; align-items: center; gap: 8px; min-height: 40px;
+      border: 1px solid #b9c9d4; border-radius: 8px; background: #fff; color: #18212b;
+      padding: 0 12px; font: 750 13px/1 Inter, ui-sans-serif, system-ui, sans-serif;
+      box-shadow: 0 4px 14px rgba(24,33,43,.18); cursor: pointer; white-space: nowrap;
+    }
+    .locate-button:hover, .locate-button:focus-visible { border-color: var(--focus); outline: none; box-shadow: 0 0 0 3px rgba(20, 120, 88, .18), 0 4px 14px rgba(24,33,43,.18); }
+    .locate-button:disabled { cursor: wait; opacity: .78; }
+    .locate-icon { position: relative; width: 16px; height: 16px; flex: 0 0 auto; border: 2px solid var(--focus); border-radius: 50%; }
+    .locate-icon::before, .locate-icon::after { content: ''; position: absolute; background: var(--focus); border-radius: 99px; }
+    .locate-icon::before { left: 50%; top: -5px; bottom: -5px; width: 2px; transform: translateX(-50%); }
+    .locate-icon::after { top: 50%; left: -5px; right: -5px; height: 2px; transform: translateY(-50%); }
+    .locate-button[data-status="loading"] .locate-icon { animation: locatePulse 1s ease-in-out infinite; }
+    @keyframes locatePulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.14); } }
     @media (max-width: 840px) {
       html, body { overflow: hidden; }
       .app { display: block; height: 100vh; height: 100dvh; }
@@ -165,6 +180,7 @@
       .notes { display: none; }
       .legend { right: 10px; bottom: 190px; max-width: calc(100vw - 20px); }
       body:not(.sheet-peek) .legend { display: none; }
+      .locate-button { min-height: 44px; padding: 0 11px; font-size: 12px; }
       table:not(.trip-table) th:nth-child(4), table:not(.trip-table) td:nth-child(4) { display: none; }
     }
   </style>
@@ -516,6 +532,96 @@
     let fallLayer = L.layerGroup().addTo(map);
     let hutLayer = L.layerGroup().addTo(map);
     let tripLayer = L.layerGroup().addTo(map);
+    let locateButton = null;
+    let userLocationMarker = null;
+    let userAccuracyCircle = null;
+
+    const LocateControl = L.Control.extend({
+      options: { position: 'topright' },
+      onAdd: () => {
+        const container = L.DomUtil.create('div', 'leaflet-control locate-control');
+        locateButton = L.DomUtil.create('button', 'locate-button', container);
+        locateButton.type = 'button';
+        locateButton.dataset.status = 'ready';
+        locateButton.title = 'Sýna núverandi staðsetningu';
+        locateButton.setAttribute('aria-label', 'Sýna núverandi staðsetningu á kortinu');
+        locateButton.innerHTML = '<span class="locate-icon" aria-hidden="true"></span><span class="locate-label">Hvar er ég?</span>';
+        L.DomEvent.disableClickPropagation(container);
+        L.DomEvent.disableScrollPropagation(container);
+        L.DomEvent.on(locateButton, 'click', locateUser);
+        return container;
+      }
+    });
+    map.addControl(new LocateControl());
+
+    function setLocateButtonStatus(status) {
+      if (!locateButton) return;
+      const label = locateButton.querySelector('.locate-label');
+      locateButton.dataset.status = status;
+      locateButton.disabled = status === 'loading';
+      if (label) label.textContent = status === 'loading' ? 'Leita...' : 'Hvar er ég?';
+    }
+
+    function locateErrorMessage(error) {
+      if (error && error.code === 1) return 'Vafrinn fékk ekki leyfi til að nota staðsetningu. Leyfðu staðsetningu fyrir síðuna og prófaðu aftur.';
+      if (error && error.code === 2) return 'Náði ekki að finna staðsetningu núna. Prófaðu aftur þegar síminn hefur betra GPS samband.';
+      if (error && error.code === 3) return 'Staðsetning tók of langan tíma. Prófaðu aftur eftir smástund.';
+      return 'Náði ekki að finna staðsetningu í þessum vafra.';
+    }
+
+    function showUserLocation(position) {
+      const lat = Number(position.coords.latitude);
+      const lon = Number(position.coords.longitude);
+      const accuracy = Math.max(0, Number(position.coords.accuracy) || 0);
+      const latlng = [lat, lon];
+      const accuracyText = accuracy ? `Nákvæmni um ${Math.round(accuracy)} m` : 'Nákvæmni óþekkt';
+      if (!userLocationMarker) {
+        userLocationMarker = L.circleMarker(latlng, {
+          radius: 8,
+          color: '#fff',
+          weight: 3,
+          fillColor: '#0b77bd',
+          fillOpacity: 1,
+          opacity: 1
+        }).addTo(map);
+      } else {
+        userLocationMarker.setLatLng(latlng);
+      }
+      userLocationMarker.bindPopup(`<div class="popup-title">Þú ert hér</div><div class="popup-meta">${accuracyText}</div>`).openPopup();
+      if (accuracy) {
+        if (!userAccuracyCircle) {
+          userAccuracyCircle = L.circle(latlng, {
+            radius: accuracy,
+            color: '#0b77bd',
+            weight: 1,
+            opacity: .7,
+            fillColor: '#0b77bd',
+            fillOpacity: .12
+          }).addTo(map);
+        } else {
+          userAccuracyCircle.setLatLng(latlng);
+          userAccuracyCircle.setRadius(accuracy);
+        }
+      }
+      map.setView(latlng, Math.max(map.getZoom(), 14), { animate: true });
+      setLocateButtonStatus('ready');
+    }
+
+    function locateUser() {
+      if (!navigator.geolocation) {
+        alert('Þessi vafri styður ekki staðsetningu.');
+        return;
+      }
+      setLocateButtonStatus('loading');
+      navigator.geolocation.getCurrentPosition(
+        showUserLocation,
+        error => {
+          setLocateButtonStatus('ready');
+          alert(locateErrorMessage(error));
+        },
+        { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 }
+      );
+    }
 
     function markerClass(feature) {
       const group = feature.properties.group;
