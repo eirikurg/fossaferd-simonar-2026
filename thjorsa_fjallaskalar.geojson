@@ -68,11 +68,11 @@
         "source": "Hnit frá notanda",
         "trip_role": "Skráður skáli á kortinu, en ekki á núverandi dagleiðum.",
         "description": "Settur inn sem gagnlegur viðmiðunarstaður í skálalagi kortsins.",
-        "note": "Mynd má bæta við síðar.",
-        "image_url": "",
-        "image_caption": "",
-        "image_credit": "",
-        "image_license": "",
+        "note": "",
+        "image_url": "assets/skalar/tjarnarver.jpg",
+        "image_caption": "Tjarnarver.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "idx": 3
       }
     },
