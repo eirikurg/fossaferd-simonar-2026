@@ -7,12 +7,56 @@
         "type": "LineString",
         "coordinates": [
           [
-            -20.300916666666666,
-            64.02366666666667
+            -20.30099689029157,
+            64.0235695336014
           ],
           [
-            -20.070611111111113,
-            64.0675
+            -20.296490527689457,
+            64.0256716310978
+          ],
+          [
+            -20.30069924890995,
+            64.0294445771724
+          ],
+          [
+            -20.29802097938955,
+            64.03375647962093
+          ],
+          [
+            -20.304695405066013,
+            64.038823004812
+          ],
+          [
+            -20.29768092557788,
+            64.04018841683865
+          ],
+          [
+            -20.2877330314368,
+            64.04092501848936
+          ],
+          [
+            -20.282291499897838,
+            64.04182330705225
+          ],
+          [
+            -20.200455710291862,
+            64.04133824631572
+          ],
+          [
+            -20.152161866426468,
+            64.04723055660725
+          ],
+          [
+            -20.111988745629787,
+            64.06411833129823
+          ],
+          [
+            -20.070284502580762,
+            64.06476507894695
+          ],
+          [
+            -20.06994436495006,
+            64.06711871735752
           ]
         ]
       },
@@ -24,15 +68,24 @@
         "to": "Hagi",
         "note": "Riðið frá Minna Hofi að Haga.",
         "route_label": "Minna Hof → Hagi",
-        "distance_km": 12.2,
-        "weather_lat": 64.045583,
-        "weather_lon": -20.185764,
+        "distance_km": 14.5,
+        "distance_kind": "GPX leið",
+        "weather_lat": 64.040925,
+        "weather_lon": -20.287733,
         "weather_place": "Minna Hof → Hagi",
         "story": "Upphafsdagurinn liggur úr byggðinni á Skeiðum inn að Haga. Þetta er góður inngangur að Þjórsársvæðinu áður en leiðin fer innar í Þjórsárdal og afréttinn.",
-        "nearby_waterfalls": "Búðafoss (1.5 km); Hestafoss (2.6 km); Krókadælarflúð (4.2 km); Árnesflúðir (5.3 km)",
+        "nearby_waterfalls": "Búðafoss (1.8 km); Hestafoss (2.5 km); Krókadælarflúð (4.2 km); Árnesflúðir (5.3 km)",
         "sources": "",
         "source_urls": "",
-        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+        "measurement": "Vegalengd og hæðartölur eru reiknaðar eftir teiknaðri GPX leið úr Garmin BaseCamp.",
+        "gpx_file": "dagur_1.gpx",
+        "gpx_name": "Dagur 1: Minna Hof til Haga",
+        "track_points": 13,
+        "ascent_m": 71,
+        "descent_m": 15,
+        "min_elevation_m": 75,
+        "max_elevation_m": 136,
+        "avg_elevation_m": 94
       }
     },
     {
@@ -41,12 +94,92 @@
         "type": "LineString",
         "coordinates": [
           [
-            -20.070611111111113,
-            64.0675
+            -20.069645969197154,
+            64.06706557609141
           ],
           [
-            -19.871571,
-            64.181214
+            -20.070028603076935,
+            64.06487370841205
+          ],
+          [
+            -20.03040734678507,
+            64.07416228204966
+          ],
+          [
+            -20.01029890961945,
+            64.08469053916633
+          ],
+          [
+            -20.003837049007416,
+            64.08984683454037
+          ],
+          [
+            -19.988532699644566,
+            64.0951828379184
+          ],
+          [
+            -19.98874543234706,
+            64.09512827172875
+          ],
+          [
+            -19.982496136799455,
+            64.09787711687386
+          ],
+          [
+            -19.97352607548237,
+            64.09994325600564
+          ],
+          [
+            -19.96465165168047,
+            64.1005946137011
+          ],
+          [
+            -19.959711777046323,
+            64.10097188316286
+          ],
+          [
+            -19.95551579631865,
+            64.10370731726289
+          ],
+          [
+            -19.952070163562894,
+            64.10458934493363
+          ],
+          [
+            -19.94236635044217,
+            64.10817797295749
+          ],
+          [
+            -19.93586207740009,
+            64.11222039721906
+          ],
+          [
+            -19.930377965793014,
+            64.11316361278296
+          ],
+          [
+            -19.932602355256677,
+            64.11991632543504
+          ],
+          [
+            -19.907413898035884,
+            64.14489842019975
+          ],
+          [
+            -19.86532668583095,
+            64.16538001969457
+          ],
+          [
+            -19.86120304092765,
+            64.17251268401742
+          ],
+          [
+            -19.865911239758134,
+            64.17700429446995
+          ],
+          [
+            -19.87145947292447,
+            64.18125324882567
           ]
         ]
       },
@@ -58,15 +191,24 @@
         "to": "Klettur",
         "note": "Riðið frá Haga í fjallakofann Klett.",
         "route_label": "Hagi → Klettur",
-        "distance_km": 15.9,
-        "weather_lat": 64.124357,
-        "weather_lon": -19.971091,
+        "distance_km": 18.0,
+        "distance_kind": "GPX leið",
+        "weather_lat": 64.103707,
+        "weather_lon": -19.955516,
         "weather_place": "Hagi → Klettur",
         "story": "Á leiðinni frá Haga í átt að Kletti er líklegt að Gaukshöfði/Hagafjall verði í sjónmáli. Heimildir um Þjórsárdal nefna Bringu og Gaukshöfða undir Hagafjalli, og dalinn sem svæði milli Búrfells/Þjórsár og Skriðufells. Þar eru líka kennileiti eins og Hjálparfoss og Þjófafoss í nágrenninu.",
-        "nearby_waterfalls": "Hjálparfoss (5.3 km)",
+        "nearby_waterfalls": "Hjálparfoss (3.9 km); Gjárfoss (6.4 km); Þjófafoss (6.7 km)",
         "sources": "Gaukshöfði / Hagafjall; Þjórsárdalur; Hjálparfoss",
         "source_urls": "https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur; https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur; https://en.wikipedia.org/wiki/Hj%C3%A1lparfoss",
-        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+        "measurement": "Vegalengd og hæðartölur eru reiknaðar eftir teiknaðri GPX leið úr Garmin BaseCamp.",
+        "gpx_file": "dagur_2.gpx",
+        "gpx_name": "Dagir 2: Hagi til Klett",
+        "track_points": 22,
+        "ascent_m": 205,
+        "descent_m": 119,
+        "min_elevation_m": 120,
+        "max_elevation_m": 280,
+        "avg_elevation_m": 156
       }
     },
     {
@@ -75,12 +217,76 @@
         "type": "LineString",
         "coordinates": [
           [
-            -19.871571,
-            64.181214
+            -19.870622707530856,
+            64.18123153969646
           ],
           [
-            -19.348349,
-            64.295794
+            -19.858464254066348,
+            64.17373962700367
+          ],
+          [
+            -19.797841971740127,
+            64.16842164471745
+          ],
+          [
+            -19.77930698543787,
+            64.17041595093906
+          ],
+          [
+            -19.72512544132769,
+            64.18878195807338
+          ],
+          [
+            -19.683017944917083,
+            64.20628873631358
+          ],
+          [
+            -19.562304290011525,
+            64.20316278934479
+          ],
+          [
+            -19.540476389229298,
+            64.20325985178351
+          ],
+          [
+            -19.519645432010293,
+            64.21053618192673
+          ],
+          [
+            -19.508379735052586,
+            64.2276940215379
+          ],
+          [
+            -19.494988471269608,
+            64.24278572201729
+          ],
+          [
+            -19.403162207454443,
+            64.26569279283285
+          ],
+          [
+            -19.38466946594417,
+            64.28150307387114
+          ],
+          [
+            -19.391532484441996,
+            64.28535472601652
+          ],
+          [
+            -19.381648376584053,
+            64.29055594839156
+          ],
+          [
+            -19.355088975280523,
+            64.29792255163193
+          ],
+          [
+            -19.350657043978572,
+            64.29780126549304
+          ],
+          [
+            -19.348297622054815,
+            64.29579354822636
           ]
         ]
       },
@@ -92,15 +298,24 @@
         "to": "Gljúfurleit",
         "note": "Riðið frá Kletti inn í Gljúfurleit.",
         "route_label": "Klettur → Gljúfurleit",
-        "distance_km": 28.3,
-        "weather_lat": 64.238504,
-        "weather_lon": -19.60996,
+        "distance_km": 33.4,
+        "distance_kind": "GPX leið",
+        "weather_lat": 64.227694,
+        "weather_lon": -19.50838,
         "weather_place": "Klettur → Gljúfurleit",
         "story": "Frá Kletti inn í Gljúfurleit færist ferðin innar á Þjórsárdals- og afréttarsvæðið. Í Þjórsárdal eru Stöng, Gjáin og Háifoss meðal kunnustu staða; heimildir nefna einnig Vegghamra við forna Sprengisandsleið, þar sem fjallmenn Gnúpverja riðu til fjalla.",
-        "nearby_waterfalls": "Granni (1.3 km); Háifoss (1.4 km); Gljúfurleitarfoss (4.4 km); Gjárfoss (5.9 km)",
+        "nearby_waterfalls": "Háifoss (0.3 km); Granni (0.3 km); Gjárfoss (3.0 km); Gljúfurleitarfoss (4.4 km); Hjálparfoss (6.2 km)",
         "sources": "Þjórsárdalur; Þjóðveldisbærinn Stöng; Gjáin; Háifoss; Sprengisandur",
         "source_urls": "https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur; https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3%C3%B0veldisb%C3%A6rinn_St%C3%B6ng; https://en.wikipedia.org/wiki/Gj%C3%A1in; https://en.wikipedia.org/wiki/H%C3%A1ifoss; https://en.wikipedia.org/wiki/Sprengisandur",
-        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+        "measurement": "Vegalengd og hæðartölur eru reiknaðar eftir teiknaðri GPX leið úr Garmin BaseCamp.",
+        "gpx_file": "dagur_3.gpx",
+        "gpx_name": "Dagur 3: Klettur til Gljúfurleit",
+        "track_points": 18,
+        "ascent_m": 493,
+        "descent_m": 184,
+        "min_elevation_m": 180,
+        "max_elevation_m": 561,
+        "avg_elevation_m": 402
       }
     },
     {
@@ -109,12 +324,72 @@
         "type": "LineString",
         "coordinates": [
           [
-            -19.348349,
-            64.295794
+            -19.34789319522679,
+            64.29583076387644
           ],
           [
-            -19.163858,
-            64.414005
+            -19.3508265260607,
+            64.29809454828501
+          ],
+          [
+            -19.32115299627185,
+            64.30564035661519
+          ],
+          [
+            -19.275697013363242,
+            64.32279987260699
+          ],
+          [
+            -19.27187092602253,
+            64.32121879421175
+          ],
+          [
+            -19.275973280891776,
+            64.31776033714414
+          ],
+          [
+            -19.265508223325014,
+            64.32325668632984
+          ],
+          [
+            -19.24399707466364,
+            64.33227578178048
+          ],
+          [
+            -19.224434550851583,
+            64.33272622525692
+          ],
+          [
+            -19.18927414342761,
+            64.3417084403336
+          ],
+          [
+            -19.186744317412376,
+            64.35651322826743
+          ],
+          [
+            -19.19125068001449,
+            64.3720861338079
+          ],
+          [
+            -19.182408107444644,
+            64.37733580358326
+          ],
+          [
+            -19.195586889982224,
+            64.39278105273843
+          ],
+          [
+            -19.155540419742465,
+            64.41028179600835
+          ],
+          [
+            -19.162295563146472,
+            64.41396715119481
+          ],
+          [
+            -19.16392165236175,
+            64.41398961469531
           ]
         ]
       },
@@ -126,15 +401,24 @@
         "to": "Bjarnalækjabotnar",
         "note": "Riðið úr Gljúfurleit inn í Bjarnalækjabotna.",
         "route_label": "Gljúfurleit → Bjarnalækjabotnar",
-        "distance_km": 15.9,
-        "weather_lat": 64.3549,
-        "weather_lon": -19.256104,
+        "distance_km": 20.0,
+        "distance_kind": "GPX leið",
+        "weather_lat": 64.332726,
+        "weather_lon": -19.224435,
         "weather_place": "Gljúfurleit → Bjarnalækjabotnar",
         "story": "Leiðin frá Gljúfurleit í Bjarnalækjabotna liggur nær efri hluta Þjórsárkerfisins. Þar verða fossar á Þjórsá sjálfri meira áberandi í kortinu, og norðar tekur við heiða- og votlendissvæði sem tengist Þjórsárverum.",
-        "nearby_waterfalls": "Gljúfurleitarfoss (1.7 km); Kjálkaversfoss (3.5 km); Dynkur (3.5 km)",
+        "nearby_waterfalls": "Dynkur (0.2 km); Gljúfurleitarfoss (0.2 km); Kjálkaversfoss (2.9 km)",
         "sources": "Þjórsárver / Ramsar; Heiðagæs og Þjórsárver",
         "source_urls": "https://en.wikipedia.org/wiki/List_of_Ramsar_Sites; https://en.wikipedia.org/wiki/Pink-footed_goose",
-        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+        "measurement": "Vegalengd og hæðartölur eru reiknaðar eftir teiknaðri GPX leið úr Garmin BaseCamp.",
+        "gpx_file": "dagur_4.gpx",
+        "gpx_name": "Dagur 4: Gljúfurleit til Bjarnarlækjabotnar",
+        "track_points": 17,
+        "ascent_m": 246,
+        "descent_m": 210,
+        "min_elevation_m": 379,
+        "max_elevation_m": 572,
+        "avg_elevation_m": 499
       }
     },
     {
@@ -143,16 +427,48 @@
         "type": "LineString",
         "coordinates": [
           [
-            -19.163858,
-            64.414005
+            -19.163629794493318,
+            64.41427518613636
           ],
           [
-            -19.1111347,
-            64.3920481
+            -19.15518050082028,
+            64.41233485937119
           ],
           [
-            -19.163858,
-            64.414005
+            -19.124699290841818,
+            64.40953211858869
+          ],
+          [
+            -19.102327320724726,
+            64.3985844310373
+          ],
+          [
+            -19.107641279697418,
+            64.39411084167659
+          ],
+          [
+            -19.116781409829855,
+            64.39208594150841
+          ],
+          [
+            -19.12358332425356,
+            64.40320713445544
+          ],
+          [
+            -19.150451011955738,
+            64.4035844039172
+          ],
+          [
+            -19.155807550996542,
+            64.41322149708867
+          ],
+          [
+            -19.163587298244238,
+            64.41433536820114
+          ],
+          [
+            -19.163884855806828,
+            64.41404795274138
           ]
         ]
       },
@@ -165,15 +481,24 @@
         "note": "Útreið frá Bjarnalækjabotnum að Kjálkaversfossi og til baka.",
         "roundtrip": true,
         "route_label": "Bjarnalækjabotnar → Kjálkaversfoss → Bjarnalækjabotnar",
-        "distance_km": 7.0,
-        "weather_lat": 64.403027,
-        "weather_lon": -19.137496,
+        "distance_km": 8.7,
+        "distance_kind": "GPX leið",
+        "weather_lat": 64.392086,
+        "weather_lon": -19.116781,
         "weather_place": "Bjarnalækjabotnar → Kjálkaversfoss → Bjarnalækjabotnar",
         "story": "Dagurinn er áfram með gistingu í Bjarnalækjabotnum, en hér er hann merktur sem útreið að Kjálkaversfossi og til baka. Fossinn er í efri hluta Þjórsár; í OSM-gögnum er punkturinn skráður sem Hvanngiljafoss, en á þessu ferðakorti er notað nafnið Kjálkaversfoss. Þjórsárver eru skráð Ramsar-votlendi og eru sérstaklega þekkt sem mikilvæg varpstöð heiðagæsar.",
-        "nearby_waterfalls": "Kjálkaversfoss (0.0 km)",
+        "nearby_waterfalls": "Kjálkaversfoss (0.1 km); Dynkur (7.0 km)",
         "sources": "Þjórsárver / Ramsar; Heiðagæs og Þjórsárver",
         "source_urls": "https://en.wikipedia.org/wiki/List_of_Ramsar_Sites; https://en.wikipedia.org/wiki/Pink-footed_goose",
-        "measurement": "Út-og-til-baka dagur er reiknaður sem tvöföld bein loftlína milli hnita, ekki nákvæm reiðleið."
+        "measurement": "Vegalengd og hæðartölur eru reiknaðar eftir teiknaðri GPX leið úr Garmin BaseCamp.",
+        "gpx_file": "dagur_5.gpx",
+        "gpx_name": "Dagur 5: Bjarnalækjabotnar til Bjarnalækjabotna",
+        "track_points": 11,
+        "ascent_m": 64,
+        "descent_m": 66,
+        "min_elevation_m": 501,
+        "max_elevation_m": 565,
+        "avg_elevation_m": 540
       }
     },
     {
@@ -182,12 +507,80 @@
         "type": "LineString",
         "coordinates": [
           [
-            -19.163858,
-            64.414005
+            -19.163970351219177,
+            64.41370655782521
           ],
           [
-            -19.675803817487452,
-            64.1696153061112
+            -19.157423498108983,
+            64.41025706939399
+          ],
+          [
+            -19.182239463552833,
+            64.37863860279322
+          ],
+          [
+            -19.32816236279905,
+            64.30576172657311
+          ],
+          [
+            -19.35135316103697,
+            64.29824248887599
+          ],
+          [
+            -19.348462326452136,
+            64.29567326791584
+          ],
+          [
+            -19.352841032668948,
+            64.29826042614877
+          ],
+          [
+            -19.381330953910947,
+            64.29018002003431
+          ],
+          [
+            -19.38919560983777,
+            64.28532941266894
+          ],
+          [
+            -19.382903818041086,
+            64.28024495020509
+          ],
+          [
+            -19.40271453000605,
+            64.26549598574638
+          ],
+          [
+            -19.44515529088676,
+            64.25471576862037
+          ],
+          [
+            -19.494596114382148,
+            64.2426144797355
+          ],
+          [
+            -19.50291406363249,
+            64.2437400855124
+          ],
+          [
+            -19.509588489308953,
+            64.2354217171669
+          ],
+          [
+            -19.539919579401612,
+            64.20409142039716
+          ],
+          [
+            -19.591573057696223,
+            64.2010088916868
+          ],
+          [
+            -19.621331579983234,
+            64.18960028328001
+          ],
+          [
+            -19.675938338041306,
+            64.16954800486565
           ]
         ]
       },
@@ -199,15 +592,24 @@
         "to": "Hólaskógur",
         "note": "Riðið frá Bjarnalækjabotnum í Hólaskóg.",
         "route_label": "Bjarnalækjabotnar → Hólaskógur",
-        "distance_km": 36.7,
-        "weather_lat": 64.29181,
-        "weather_lon": -19.419831,
+        "distance_km": 40.0,
+        "distance_kind": "GPX leið",
+        "weather_lat": 64.280245,
+        "weather_lon": -19.382904,
         "weather_place": "Bjarnalækjabotnar → Hólaskógur",
         "story": "Á leiðinni frá Bjarnalækjabotnum í Hólaskóg er komið aftur niður að Þjórsárdal. Heimildir nefna að útsýnispallur við Háafoss sé vestan Stangarfells á leiðinni frá Hólaskógi, og Háifoss/Granni eru meðal sterkustu kennileita Fossárdals.",
-        "nearby_waterfalls": "Granni (3.2 km); Háifoss (3.3 km); Gljúfurleitarfoss (3.4 km); Kjálkaversfoss (3.5 km); Gjárfoss (3.6 km); Dynkur (4.6 km)",
+        "nearby_waterfalls": "Gljúfurleitarfoss (1.2 km); Dynkur (2.5 km); Kjálkaversfoss (2.8 km); Gjárfoss (3.6 km); Granni (3.6 km); Háifoss (3.6 km)",
         "sources": "Þjórsárdalur; Háifoss",
         "source_urls": "https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur; https://en.wikipedia.org/wiki/H%C3%A1ifoss",
-        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+        "measurement": "Vegalengd og hæðartölur eru reiknaðar eftir teiknaðri GPX leið úr Garmin BaseCamp.",
+        "gpx_file": "dagur_6.gpx",
+        "gpx_name": "Dagur 6: Bjarnalækjabotnar til Hólaskógur",
+        "track_points": 19,
+        "ascent_m": 135,
+        "descent_m": 419,
+        "min_elevation_m": 278,
+        "max_elevation_m": 561,
+        "avg_elevation_m": 496
       }
     },
     {
@@ -216,12 +618,184 @@
         "type": "LineString",
         "coordinates": [
           [
-            -19.675803817487452,
-            64.1696153061112
+            -19.676377633586526,
+            64.16960156522691
           ],
           [
-            -20.300916666666666,
-            64.02366666666667
+            -19.733556462451816,
+            64.15062912739813
+          ],
+          [
+            -19.751751646399498,
+            64.15007223375142
+          ],
+          [
+            -19.75595978088677,
+            64.15432093665004
+          ],
+          [
+            -19.776705745607615,
+            64.1545544564724
+          ],
+          [
+            -19.81500911526382,
+            64.1479248739779
+          ],
+          [
+            -19.828017661347985,
+            64.14650556631386
+          ],
+          [
+            -19.84911734238267,
+            64.14057428017259
+          ],
+          [
+            -19.85715181566775,
+            64.13898523896933
+          ],
+          [
+            -19.884657198563218,
+            64.13145736791193
+          ],
+          [
+            -19.897325774654746,
+            64.12570813670754
+          ],
+          [
+            -19.907655967399478,
+            64.12297521717846
+          ],
+          [
+            -19.912970010191202,
+            64.12116061896086
+          ],
+          [
+            -19.919006740674376,
+            64.11848369054496
+          ],
+          [
+            -19.922336619347334,
+            64.11631462164223
+          ],
+          [
+            -19.928670907393098,
+            64.11370952613652
+          ],
+          [
+            -19.935564687475562,
+            64.11202115938067
+          ],
+          [
+            -19.942154120653868,
+            64.1079427767545
+          ],
+          [
+            -19.952654549852014,
+            64.10422372631729
+          ],
+          [
+            -19.95907349511981,
+            64.10103776492178
+          ],
+          [
+            -19.97365515679121,
+            64.0998160187155
+          ],
+          [
+            -19.983985600993037,
+            64.097103131935
+          ],
+          [
+            -20.00337109901011,
+            64.08975488506258
+          ],
+          [
+            -20.027092387899756,
+            64.07560740597546
+          ],
+          [
+            -20.040228171274066,
+            64.0715264249593
+          ],
+          [
+            -20.056467773392797,
+            64.06773554161191
+          ],
+          [
+            -20.072664879262447,
+            64.06464530155063
+          ],
+          [
+            -20.1135612744838,
+            64.0640164911747
+          ],
+          [
+            -20.121680656448007,
+            64.05934793874621
+          ],
+          [
+            -20.15530767850578,
+            64.04641223140061
+          ],
+          [
+            -20.199477039277554,
+            64.04129516333342
+          ],
+          [
+            -20.25448713451624,
+            64.04079208150506
+          ],
+          [
+            -20.279781622812152,
+            64.04170839115977
+          ],
+          [
+            -20.283777778968215,
+            64.04161853715777
+          ],
+          [
+            -20.288284057751298,
+            64.04057649895549
+          ],
+          [
+            -20.297636752948165,
+            64.04003745876253
+          ],
+          [
+            -20.303914127871394,
+            64.03876634314656
+          ],
+          [
+            -20.303999120369554,
+            64.03714939020574
+          ],
+          [
+            -20.302936295047402,
+            64.03592764399946
+          ],
+          [
+            -20.29872765764594,
+            64.03416694141924
+          ],
+          [
+            -20.29796238988638,
+            64.03301711194217
+          ],
+          [
+            -20.300513170659542,
+            64.02936997823417
+          ],
+          [
+            -20.2964745182544,
+            64.02570482343435
+          ],
+          [
+            -20.29906771145761,
+            64.02392618358135
+          ],
+          [
+            -20.300980797037482,
+            64.02362074702978
           ]
         ]
       },
@@ -233,15 +807,24 @@
         "to": "Minna Hof",
         "note": "Riðið frá Hólaskógi heim að Minna Hofi.",
         "route_label": "Hólaskógur → Minna Hof",
-        "distance_km": 34.4,
-        "weather_lat": 64.096641,
-        "weather_lon": -19.98836,
+        "distance_km": 37.9,
+        "distance_kind": "GPX leið",
+        "weather_lat": 64.089755,
+        "weather_lon": -20.003371,
         "weather_place": "Hólaskógur → Minna Hof",
         "story": "Lokadagurinn liggur frá Hólaskógi heim að Minna Hofi og tengir hálendisbrúnina aftur við byggðina. Í nágrenni leiðarinnar eru Hjálparfoss og Þjófafoss; Hjálparfoss er við Fossá nálægt ármótum hennar og Þjórsár.",
-        "nearby_waterfalls": "Gjárfoss (0.4 km); Hjálparfoss (1.3 km); Búðafoss (1.6 km); Hestafoss (2.6 km); Krókadælarflúð (4.2 km); Háifoss (4.3 km)",
+        "nearby_waterfalls": "Gjárfoss (0.1 km); Búðafoss (1.7 km); Hjálparfoss (2.4 km); Hestafoss (2.6 km); Krókadælarflúð (4.2 km); Háifoss (4.3 km)",
         "sources": "Hjálparfoss; Þjórsárdalur",
         "source_urls": "https://en.wikipedia.org/wiki/Hj%C3%A1lparfoss; https://en.wikipedia.org/wiki/%C3%9Ej%C3%B3rs%C3%A1rdalur",
-        "measurement": "Bein loftlína milli hnita, ekki reiðleið eða akstursleið."
+        "measurement": "Vegalengd og hæðartölur eru reiknaðar eftir teiknaðri GPX leið úr Garmin BaseCamp.",
+        "gpx_file": "dagur_7.gpx",
+        "gpx_name": "Dagur 7: Hólaskógur til Minna Hof",
+        "track_points": 45,
+        "ascent_m": 43,
+        "descent_m": 242,
+        "min_elevation_m": 75,
+        "max_elevation_m": 279,
+        "avg_elevation_m": 126
       }
     },
     {
