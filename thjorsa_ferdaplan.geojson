@@ -257,6 +257,13 @@
         "name": "Minna Hof",
         "kind": "Heimili / upphaf og endir",
         "source": "Hnit frá notanda",
+        "note": "",
+        "trip_role": "",
+        "description": "",
+        "image_url": "",
+        "image_caption": "",
+        "image_credit": "",
+        "image_license": "",
         "stop_order": 1
       }
     },
@@ -273,6 +280,13 @@
         "name": "Hagi",
         "kind": "Bóndabær",
         "source": "Hnit frá notanda",
+        "note": "",
+        "trip_role": "",
+        "description": "",
+        "image_url": "",
+        "image_caption": "",
+        "image_credit": "",
+        "image_license": "",
         "stop_order": 2
       }
     },
@@ -289,6 +303,13 @@
         "name": "Klettur",
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "note": "",
+        "trip_role": "Gisting eftir dag 2 og brottför í Gljúfurleit á degi 3.",
+        "description": "Fyrsti fjallakofinn í ferðaplaninu eftir að riðið er frá Haga inn á leiðina.",
+        "image_url": "assets/skalar/klettur.jpg",
+        "image_caption": "Klettur.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "stop_order": 3
       }
     },
@@ -305,6 +326,13 @@
         "name": "Gljúfurleit",
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "note": "",
+        "trip_role": "Gisting eftir dag 3 og brottför á degi 4.",
+        "description": "Áfangastaðurinn þegar riðið er frá Kletti innar á afréttinn. Daginn eftir liggur leiðin áfram í Bjarnalækjabotna.",
+        "image_url": "assets/skalar/gljufurleit.jpg",
+        "image_caption": "Gljúfurleit.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "stop_order": 4
       }
     },
@@ -321,6 +349,13 @@
         "name": "Bjarnalækjabotnar",
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "note": "",
+        "trip_role": "Gisting eftir dag 4, útreið að Kjálkaversfossi á degi 5 og brottför á degi 6.",
+        "description": "Miðpunktur ferðaplanins á hálendinu. Hér er gist tvær nætur og þaðan er merkt út-og-til-baka leið að Kjálkaversfossi.",
+        "image_url": "assets/skalar/bjarnarlaekjabotnar.jpg",
+        "image_caption": "Bjarnalækjabotnar.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "stop_order": 5
       }
     },
@@ -337,6 +372,13 @@
         "name": "Kjálkaversfoss",
         "kind": "Foss / skoðunarstaður",
         "source": "OSM-fossapunktur, birt sem Kjálkaversfoss",
+        "note": "",
+        "trip_role": "",
+        "description": "",
+        "image_url": "",
+        "image_caption": "",
+        "image_credit": "",
+        "image_license": "",
         "stop_order": 6
       }
     },
@@ -353,6 +395,13 @@
         "name": "Hólaskógur",
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "note": "",
+        "trip_role": "Gisting eftir dag 6 og brottför heim að Minna Hofi á degi 7.",
+        "description": "Síðasti skálinn í ferðaplaninu áður en riðið er aftur niður í byggð og heim að Minna Hofi.",
+        "image_url": "assets/skalar/holaskogur.jpg",
+        "image_caption": "Hólaskógur.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "stop_order": 7
       }
     }

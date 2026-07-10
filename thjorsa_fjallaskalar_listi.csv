@@ -1,7 +1,7 @@
-﻿name,kind,lat,lon,source,note
-Gljúfurleit,Fjallaskáli,64.295794,-19.348349,Hnit frá notanda,
-Bjarnalækjabotnar,Fjallaskáli,64.414005,-19.163858,Hnit frá notanda,
-Tjarnarver,Fjallaskáli,64.532503,-18.81839,Hnit frá notanda,
-Hólaskógur,Fjallaskáli,64.1696153061112,-19.675803817487452,Hnit frá notanda,
-Klettur,Fjallaskáli,64.181214,-19.871571,Hnit frá notanda,
-Hallarmúli,Fjallaskáli,64.197872,-19.981627,Hnit frá notanda,
+﻿name,kind,lat,lon,source,trip_role,description,note,image_url,image_caption,image_credit,image_license
+Gljúfurleit,Fjallaskáli,64.295794,-19.348349,Hnit frá notanda,Gisting eftir dag 3 og brottför á degi 4.,Áfangastaðurinn þegar riðið er frá Kletti innar á afréttinn. Daginn eftir liggur leiðin áfram í Bjarnalækjabotna.,,assets/skalar/gljufurleit.jpg,Gljúfurleit.,Eigin mynd: Eiríkur,Notað með leyfi höfundar
+Bjarnalækjabotnar,Fjallaskáli,64.414005,-19.163858,Hnit frá notanda,"Gisting eftir dag 4, útreið að Kjálkaversfossi á degi 5 og brottför á degi 6.",Miðpunktur ferðaplanins á hálendinu. Hér er gist tvær nætur og þaðan er merkt út-og-til-baka leið að Kjálkaversfossi.,,assets/skalar/bjarnarlaekjabotnar.jpg,Bjarnalækjabotnar.,Eigin mynd: Eiríkur,Notað með leyfi höfundar
+Tjarnarver,Fjallaskáli,64.532503,-18.81839,Hnit frá notanda,"Skráður skáli á kortinu, en ekki á núverandi dagleiðum.",Settur inn sem gagnlegur viðmiðunarstaður í skálalagi kortsins.,Mynd má bæta við síðar.,,,,
+Hólaskógur,Fjallaskáli,64.1696153061112,-19.675803817487452,Hnit frá notanda,Gisting eftir dag 6 og brottför heim að Minna Hofi á degi 7.,Síðasti skálinn í ferðaplaninu áður en riðið er aftur niður í byggð og heim að Minna Hofi.,,assets/skalar/holaskogur.jpg,Hólaskógur.,Eigin mynd: Eiríkur,Notað með leyfi höfundar
+Klettur,Fjallaskáli,64.181214,-19.871571,Hnit frá notanda,Gisting eftir dag 2 og brottför í Gljúfurleit á degi 3.,Fyrsti fjallakofinn í ferðaplaninu eftir að riðið er frá Haga inn á leiðina.,,assets/skalar/klettur.jpg,Klettur.,Eigin mynd: Eiríkur,Notað með leyfi höfundar
+Hallarmúli,Fjallaskáli,64.197872,-19.981627,Hnit frá notanda,"Skráður skáli á kortinu, en ekki á núverandi dagleiðum.",Settur inn sem nálægur viðmiðunarstaður á svæðinu vestan við Klett og Hólaskóg.,,assets/skalar/hallarmuli.jpg,Hallarmúli.,Eigin mynd: Eiríkur,Notað með leyfi höfundar

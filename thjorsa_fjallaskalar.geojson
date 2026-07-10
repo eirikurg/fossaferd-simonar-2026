@@ -16,7 +16,13 @@
         "lon": -19.348349,
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "trip_role": "Gisting eftir dag 3 og brottför á degi 4.",
+        "description": "Áfangastaðurinn þegar riðið er frá Kletti innar á afréttinn. Daginn eftir liggur leiðin áfram í Bjarnalækjabotna.",
         "note": "",
+        "image_url": "assets/skalar/gljufurleit.jpg",
+        "image_caption": "Gljúfurleit.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "idx": 1
       }
     },
@@ -35,7 +41,13 @@
         "lon": -19.163858,
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "trip_role": "Gisting eftir dag 4, útreið að Kjálkaversfossi á degi 5 og brottför á degi 6.",
+        "description": "Miðpunktur ferðaplanins á hálendinu. Hér er gist tvær nætur og þaðan er merkt út-og-til-baka leið að Kjálkaversfossi.",
         "note": "",
+        "image_url": "assets/skalar/bjarnarlaekjabotnar.jpg",
+        "image_caption": "Bjarnalækjabotnar.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "idx": 2
       }
     },
@@ -54,7 +66,13 @@
         "lon": -18.81839,
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
-        "note": "",
+        "trip_role": "Skráður skáli á kortinu, en ekki á núverandi dagleiðum.",
+        "description": "Settur inn sem gagnlegur viðmiðunarstaður í skálalagi kortsins.",
+        "note": "Mynd má bæta við síðar.",
+        "image_url": "",
+        "image_caption": "",
+        "image_credit": "",
+        "image_license": "",
         "idx": 3
       }
     },
@@ -73,7 +91,13 @@
         "lon": -19.675803817487452,
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "trip_role": "Gisting eftir dag 6 og brottför heim að Minna Hofi á degi 7.",
+        "description": "Síðasti skálinn í ferðaplaninu áður en riðið er aftur niður í byggð og heim að Minna Hofi.",
         "note": "",
+        "image_url": "assets/skalar/holaskogur.jpg",
+        "image_caption": "Hólaskógur.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "idx": 4
       }
     },
@@ -92,7 +116,13 @@
         "lon": -19.871571,
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "trip_role": "Gisting eftir dag 2 og brottför í Gljúfurleit á degi 3.",
+        "description": "Fyrsti fjallakofinn í ferðaplaninu eftir að riðið er frá Haga inn á leiðina.",
         "note": "",
+        "image_url": "assets/skalar/klettur.jpg",
+        "image_caption": "Klettur.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "idx": 5
       }
     },
@@ -111,7 +141,13 @@
         "lon": -19.981627,
         "kind": "Fjallaskáli",
         "source": "Hnit frá notanda",
+        "trip_role": "Skráður skáli á kortinu, en ekki á núverandi dagleiðum.",
+        "description": "Settur inn sem nálægur viðmiðunarstaður á svæðinu vestan við Klett og Hólaskóg.",
         "note": "",
+        "image_url": "assets/skalar/hallarmuli.jpg",
+        "image_caption": "Hallarmúli.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
         "idx": 6
       }
     }
