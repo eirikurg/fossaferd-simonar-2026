@@ -60,6 +60,18 @@
     .elevation-point { fill: #fff; stroke: #2f7d5b; stroke-width: 2; }
     .elevation-profile-meta { display: flex; justify-content: space-between; gap: 8px; margin-top: 6px; color: #52606c; font-size: 11px; line-height: 1.25; }
     .elevation-profile-meta span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .remaining-box { border: 1px solid #d5e1e8; border-radius: 8px; background: #f7fbfd; padding: 10px; }
+    .remaining-button {
+      display: inline-flex; align-items: center; justify-content: center; min-height: 36px;
+      border: 1px solid #b9c9d4; border-radius: 8px; background: #fff; color: #18212b;
+      padding: 0 11px; font: inherit; font-weight: 800; cursor: pointer;
+    }
+    .remaining-button:hover, .remaining-button:focus-visible { border-color: var(--focus); outline: none; box-shadow: 0 0 0 3px rgba(20, 120, 88, .14); }
+    .remaining-button:disabled { cursor: wait; opacity: .72; }
+    .remaining-result { margin-top: 8px; color: #344250; }
+    .remaining-result:empty { display: none; }
+    .remaining-result strong { display: block; color: #18212b; font-size: 16px; line-height: 1.2; margin-bottom: 3px; }
+    .remaining-result span { display: block; color: #52606c; }
     .nearby-falls { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 6px; }
     .nearby-fall {
       display: inline-flex; align-items: center; gap: 6px; min-height: 34px;
@@ -168,6 +180,7 @@
       .day-detail { max-height: 31dvh; overflow: auto; padding: 11px 12px 12px; }
       .elevation-profile svg { height: 78px; }
       .elevation-profile-meta { font-size: 10px; }
+      .remaining-button { width: 100%; min-height: 40px; }
       .controls { padding: 8px 12px; gap: 8px; }
       .toggles { display: flex; gap: 7px; overflow-x: auto; padding-bottom: 2px; }
       label.toggle { flex: 0 0 auto; min-height: 34px; padding: 7px 9px; white-space: nowrap; }
@@ -192,7 +205,7 @@
       <div class="sheet-grip" aria-hidden="true"></div>
       <header>
         <h1>Fossaferð Símonar 2026</h1>
-        <p class="subtitle">Tilgangur með þessari síðu er að sýna rennslu Þjórsár frá Hofsjökulsupptökum og Þjórsárverum niður að sjó, með Tungnaá, Kaldakvísl, Fossá, Rauðá og öðrum merktum þverám í OSM-gögnum. Ferðafélagið Símon er einmitt að fara þessa leið og hér eru nokkrar gagnlegar upplýsingar. Hægt er að smella á flest til að fá meiri upplýsingar. Vegalengdir dagleiða eru reiknaðar eftir teiknuðum GPX leiðum úr Garmin BaseCamp þegar þær liggja fyrir. Ef smellt er á dagleiðirnar er tilgreint hvaða fossar verða í nágrenninu og einnig birtist veðurspáin sjö dögum fyrir brottför.</p>
+        <p class="subtitle">Fossaferð Símonar 2026 er gagnvirkt ferðakort með Þjórsá frá upptökum við Hofsjökul og Þjórsárver niður til sjávar, ásamt helstu þverám, fossum, fjallaskálum og dagleiðum ferðarinnar. Hægt er að smella á fossa, ár, skála og dagleiðir til að fá nánari upplýsingar, myndir, fróðleik, hæðarprófíla og vegalengdir úr GPX-leiðum. Þegar nær dregur birtist veðurspá fyrir dagleiðirnar, og í síma má nota staðsetningu til að sjá hvar maður er og hvað er langt eftir í næsta áfangastað.</p>
       </header>
       <section class="stats" aria-label="Samantekt">
         <div class="stat"><strong id="fallCount">0</strong><span>fossapunktar</span></div>
@@ -535,6 +548,7 @@
     let locateButton = null;
     let userLocationMarker = null;
     let userAccuracyCircle = null;
+    let userPosition = null;
 
     const LocateControl = L.Control.extend({
       options: { position: 'topright' },
@@ -569,12 +583,26 @@
       return 'Náði ekki að finna staðsetningu í þessum vafra.';
     }
 
-    function showUserLocation(position) {
+    function requestCurrentPosition() {
+      if (!navigator.geolocation) {
+        return Promise.reject({ code: 0, message: 'Geolocation unsupported' });
+      }
+      return new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(
+          resolve,
+          reject,
+          { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 }
+        );
+      });
+    }
+
+    function showUserLocation(position, options = {}) {
       const lat = Number(position.coords.latitude);
       const lon = Number(position.coords.longitude);
       const accuracy = Math.max(0, Number(position.coords.accuracy) || 0);
       const latlng = [lat, lon];
       const accuracyText = accuracy ? `Nákvæmni um ${Math.round(accuracy)} m` : 'Nákvæmni óþekkt';
+      userPosition = { lat, lon, accuracy };
       if (!userLocationMarker) {
         userLocationMarker = L.circleMarker(latlng, {
           radius: 8,
@@ -587,7 +615,8 @@
       } else {
         userLocationMarker.setLatLng(latlng);
       }
-      userLocationMarker.bindPopup(`<div class="popup-title">Þú ert hér</div><div class="popup-meta">${accuracyText}</div>`).openPopup();
+      userLocationMarker.bindPopup(`<div class="popup-title">Þú ert hér</div><div class="popup-meta">${accuracyText}</div>`);
+      if (options.openPopup !== false) userLocationMarker.openPopup();
       if (accuracy) {
         if (!userAccuracyCircle) {
           userAccuracyCircle = L.circle(latlng, {
@@ -603,7 +632,7 @@
           userAccuracyCircle.setRadius(accuracy);
         }
       }
-      map.setView(latlng, Math.max(map.getZoom(), 14), { animate: true });
+      if (options.zoom !== false) map.setView(latlng, Math.max(map.getZoom(), 14), { animate: true });
       setLocateButtonStatus('ready');
     }
 
@@ -613,14 +642,12 @@
         return;
       }
       setLocateButtonStatus('loading');
-      navigator.geolocation.getCurrentPosition(
-        showUserLocation,
-        error => {
+      requestCurrentPosition()
+        .then(position => showUserLocation(position))
+        .catch(error => {
           setLocateButtonStatus('ready');
           alert(locateErrorMessage(error));
-        },
-        { enableHighAccuracy: true, timeout: 12000, maximumAge: 30000 }
-      );
+        });
     }
 
     function markerClass(feature) {
@@ -708,6 +735,131 @@
     function distanceMetaHtml(p) {
       const kind = p.distance_kind ? ` (${escapeHtml(p.distance_kind)})` : '';
       return `Vegalengd${kind}: ${Number(p.distance_km).toFixed(1)} km`;
+    }
+
+    function formatDistance(km) {
+      const value = Math.max(0, Number(km) || 0);
+      if (value < 1) return `${Math.round(value * 1000)} m`;
+      return `${value.toFixed(1)} km`;
+    }
+
+    function destinationName(row) {
+      if (!row) return 'áfangastað';
+      return row.roundtrip ? row.from : row.to;
+    }
+
+    function tripSegmentForDay(day) {
+      return tripSegments.find(feature => Number(feature.properties.day) === Number(day));
+    }
+
+    function coordinatePoint(coord) {
+      return { lon: Number(coord[0]), lat: Number(coord[1]) };
+    }
+
+    function haversineKmJs(a, b) {
+      const radius = 6371.0088;
+      const toRad = degrees => degrees * Math.PI / 180;
+      const dLat = toRad(b.lat - a.lat);
+      const dLon = toRad(b.lon - a.lon);
+      const lat1 = toRad(a.lat);
+      const lat2 = toRad(b.lat);
+      const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLon / 2) ** 2;
+      return 2 * radius * Math.asin(Math.min(1, Math.sqrt(h)));
+    }
+
+    function projectPointToSegmentKm(point, start, end) {
+      const lat0 = point.lat * Math.PI / 180;
+      const kmLat = 111.32;
+      const kmLon = 111.32 * Math.cos(lat0);
+      const px = point.lon * kmLon;
+      const py = point.lat * kmLat;
+      const ax = start.lon * kmLon;
+      const ay = start.lat * kmLat;
+      const bx = end.lon * kmLon;
+      const by = end.lat * kmLat;
+      const dx = bx - ax;
+      const dy = by - ay;
+      const denom = dx * dx + dy * dy;
+      const t = denom ? clamp(((px - ax) * dx + (py - ay) * dy) / denom, 0, 1) : 0;
+      const x = ax + t * dx;
+      const y = ay + t * dy;
+      return {
+        t,
+        distanceKm: Math.hypot(px - x, py - y),
+        nearest: { lon: x / kmLon, lat: y / kmLat }
+      };
+    }
+
+    function routeProgressAtPoint(point, coordinates) {
+      if (!Array.isArray(coordinates) || coordinates.length < 2) return null;
+      let travelledKm = 0;
+      let totalKm = 0;
+      let best = null;
+      for (let i = 1; i < coordinates.length; i += 1) {
+        const start = coordinatePoint(coordinates[i - 1]);
+        const end = coordinatePoint(coordinates[i]);
+        const segmentKm = haversineKmJs(start, end);
+        const projection = projectPointToSegmentKm(point, start, end);
+        const alongKm = travelledKm + projection.t * segmentKm;
+        if (!best || projection.distanceKm < best.offRouteKm) {
+          best = {
+            alongKm,
+            offRouteKm: projection.distanceKm,
+            nearest: projection.nearest
+          };
+        }
+        travelledKm += segmentKm;
+        totalKm += segmentKm;
+      }
+      if (!best) return null;
+      return {
+        ...best,
+        totalKm,
+        remainingKm: Math.max(0, totalKm - best.alongKm)
+      };
+    }
+
+    function remainingDistanceHtml(row) {
+      if (!tripSegmentForDay(row.day)) return '';
+      return `<div class="day-detail-section remaining-box">
+        <strong>Staða á leið</strong>
+        <button class="remaining-button" type="button" data-remaining-day="${escapeHtml(row.day)}">Hvað er langt eftir?</button>
+        <div class="remaining-result" id="remainingResult" aria-live="polite"></div>
+      </div>`;
+    }
+
+    async function updateRemainingDistance(day, button) {
+      const result = document.getElementById('remainingResult');
+      const row = tripDays.find(item => Number(item.day) === Number(day));
+      const segment = tripSegmentForDay(day);
+      if (!result || !row || !segment) return;
+      const originalText = button ? button.textContent : '';
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Reikna...';
+      }
+      result.textContent = 'Leita að staðsetningu...';
+      try {
+        const position = await requestCurrentPosition();
+        showUserLocation(position, { openPopup: false, zoom: false });
+        const progress = routeProgressAtPoint(userPosition, segment.geometry.coordinates);
+        if (!progress) {
+          result.textContent = 'Náði ekki að lesa GPX leiðina fyrir þennan dag.';
+          return;
+        }
+        const offRouteText = progress.offRouteKm < 0.05
+          ? 'Þú ert nánast á GPX-leiðinni.'
+          : `Þú ert um ${formatDistance(progress.offRouteKm)} frá GPX-leiðinni.`;
+        result.innerHTML = `<strong>${formatDistance(progress.remainingKm)} eftir af dagleiðinni</strong>
+          <span>Áfangastaður: ${escapeHtml(destinationName(row))}. ${offRouteText}</span>`;
+      } catch (error) {
+        result.textContent = locateErrorMessage(error);
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = originalText || 'Hvað er langt eftir?';
+        }
+      }
     }
 
     function elevationProfileHtml(p) {
@@ -839,6 +991,7 @@
           <div class="day-km"><strong>${Number(row.distance_km).toFixed(1)}</strong><span>${escapeHtml(row.distance_kind || 'km')}</span></div>
         </div>
         <div class="day-detail-section"><strong>Ferðadagur</strong>${escapeHtml(row.note)}<br>${escapeHtml(row.measurement)}</div>
+        ${remainingDistanceHtml(row)}
         ${elevationDetailHtml(row)}
         <div class="day-detail-section"><strong>Fossar í nágrenni</strong>${nearbyFallsHtml(row)}</div>
         <div class="day-detail-section"><strong>Fróðleikur</strong>${escapeHtml(row.story || '')}</div>
@@ -1327,6 +1480,11 @@
     });
 
     document.getElementById('dayDetail').addEventListener('click', event => {
+      const remainingButton = event.target.closest('.remaining-button');
+      if (remainingButton) {
+        updateRemainingDistance(remainingButton.dataset.remainingDay, remainingButton);
+        return;
+      }
       const button = event.target.closest('.nearby-fall');
       if (!button) return;
       focusFallByName(button.dataset.fallName);
