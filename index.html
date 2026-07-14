@@ -285,7 +285,7 @@
         <div class="toggles">
           <label class="toggle"><input id="showMain" type="checkbox" checked /> Þjórsá</label>
           <label class="toggle"><input id="showTrib" type="checkbox" checked /> Þverár</label>
-          <label class="toggle"><input id="showUnnamed" type="checkbox" checked /> Ónefndir</label>
+          <label class="toggle"><input id="showUnnamed" type="checkbox" /> Ónefndir</label>
           <label class="toggle"><input id="showMinor" type="checkbox" checked /> Minni kvíslar</label>
           <label class="toggle"><input id="showHuts" type="checkbox" checked /> Fjallaskálar</label>
           <label class="toggle"><input id="showTrip" type="checkbox" checked /> Ferðaplan</label>
@@ -560,7 +560,7 @@
     const tripSegments = DATA.trip.segments.features;
     const tripStops = DATA.trip.stops.features;
     const tripDays = DATA.trip.rows;
-    const layerState = { main: true, tributary: true, unnamed: true, minor: true, huts: true, trip: true };
+    const layerState = { main: true, tributary: true, unnamed: false, minor: true, huts: true, trip: true };
     const riverLayer = L.geoJSON(DATA.rivers, {
       filter: f => shouldShowRiver(f),
       style: f => {
