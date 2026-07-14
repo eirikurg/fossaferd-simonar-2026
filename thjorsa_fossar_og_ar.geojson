@@ -34935,6 +34935,13 @@
         "osm_id": 1818885083,
         "source": "OpenStreetMap/Overpass",
         "accuracy": "OSM punktur",
+        "summary": "Gjárfoss er foss í Rauðá inni í Gjánni í Þjórsárdal. Umhverfið einkennist af hraunmyndunum, gróðri og gljúfrum þar sem Rauðá rennur í gegnum Gjána.",
+        "image_url": "assets/fossar/gjarfoss.jpg",
+        "image_caption": "Gjárfoss í Gjánni.",
+        "image_credit": "Eigin mynd: Eiríkur",
+        "image_license": "Notað með leyfi höfundar",
+        "image_license_url": "",
+        "image_source_url": "",
         "idx": 12
       }
     },
