@@ -28,8 +28,33 @@
     .app { display: grid; grid-template-columns: minmax(330px, 390px) 1fr; height: 100vh; }
     aside { background: var(--panel); border-right: 1px solid var(--line); display: flex; flex-direction: column; min-width: 0; }
     header { padding: 20px 22px 16px; border-bottom: 1px solid var(--line); }
+    .header-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
     h1 { margin: 0; font-size: 24px; line-height: 1.08; letter-spacing: 0; }
     .subtitle { margin: 8px 0 0; color: var(--muted); font-size: 13px; line-height: 1.45; }
+    .about-button {
+      display: none; flex: 0 0 auto; min-height: 34px; border: 1px solid #b9c9d4;
+      border-radius: 8px; background: #fff; color: #18212b; padding: 0 11px;
+      font: inherit; font-weight: 800; cursor: pointer;
+    }
+    .about-button:hover, .about-button:focus-visible { border-color: var(--focus); outline: none; box-shadow: 0 0 0 3px rgba(20, 120, 88, .14); }
+    .about-modal[hidden] { display: none; }
+    .about-modal {
+      position: fixed; inset: 0; z-index: 900; display: grid; align-items: end; justify-items: center;
+      padding: 16px; background: rgba(24, 33, 43, .34);
+    }
+    .about-card {
+      width: min(560px, 100%); max-height: min(76vh, 560px); overflow: auto;
+      border: 1px solid var(--line); border-radius: 8px; background: #fff; color: #2d3a45;
+      box-shadow: 0 18px 48px rgba(24,33,43,.24);
+    }
+    .about-card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 14px; border-bottom: 1px solid var(--line); }
+    .about-card h2 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    .about-card p { margin: 0; padding: 13px 14px 15px; font-size: 14px; line-height: 1.5; }
+    .about-close {
+      min-height: 34px; border: 1px solid #b9c9d4; border-radius: 8px; background: #fff;
+      color: #18212b; padding: 0 11px; font: inherit; font-weight: 800; cursor: pointer;
+    }
+    .about-close:hover, .about-close:focus-visible { border-color: var(--focus); outline: none; box-shadow: 0 0 0 3px rgba(20, 120, 88, .14); }
     .sheet-toggle { display: none; }
     .sheet-grip { display: none; }
     .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 14px 22px; border-bottom: 1px solid var(--line); }
@@ -167,6 +192,7 @@
       .sheet-grip::before { content: ''; width: 42px; height: 5px; border-radius: 999px; background: #b9c9d4; }
       header { padding: 8px 16px 10px; }
       h1 { font-size: 19px; }
+      .about-button { display: inline-flex; align-items: center; justify-content: center; }
       .subtitle { display: none; }
       .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; padding: 8px 12px; }
       .stat { padding: 7px 6px; }
@@ -204,7 +230,10 @@
       <button class="sheet-toggle" id="sheetToggle" type="button" aria-expanded="false" aria-controls="sidePanel"><span id="sheetToggleText">Opna yfirlit</span></button>
       <div class="sheet-grip" aria-hidden="true"></div>
       <header>
-        <h1>Fossaferð Símonar 2026</h1>
+        <div class="header-row">
+          <h1>Fossaferð Símonar 2026</h1>
+          <button class="about-button" id="aboutToggle" type="button" aria-expanded="false" aria-controls="aboutModal">Um</button>
+        </div>
         <p class="subtitle">Fossaferð Símonar 2026 er gagnvirkt ferðakort með Þjórsá frá upptökum við Hofsjökul og Þjórsárver niður til sjávar, ásamt helstu þverám, fossum, fjallaskálum og dagleiðum ferðarinnar. Hægt er að smella á fossa, ár, skála og dagleiðir til að fá nánari upplýsingar, myndir, fróðleik, hæðarprófíla og vegalengdir úr GPX-leiðum. Þegar nær dregur birtist veðurspá fyrir dagleiðirnar, og í síma má nota staðsetningu til að sjá hvar maður er og hvað er langt eftir í næsta áfangastað.</p>
       </header>
       <section class="stats" aria-label="Samantekt">
@@ -498,6 +527,15 @@
       </footer>
     </aside>
     <main id="map" aria-label="Kort"></main>
+  </div>
+  <div class="about-modal" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle" hidden>
+    <div class="about-card">
+      <div class="about-card-head">
+        <h2 id="aboutTitle">Um síðuna</h2>
+        <button class="about-close" id="aboutClose" type="button">Loka</button>
+      </div>
+      <p>Fossaferð Símonar 2026 er gagnvirkt ferðakort með Þjórsá frá upptökum við Hofsjökul og Þjórsárver niður til sjávar, ásamt helstu þverám, fossum, fjallaskálum og dagleiðum ferðarinnar. Hægt er að smella á fossa, ár, skála og dagleiðir til að fá nánari upplýsingar, myndir, fróðleik, hæðarprófíla og vegalengdir úr GPX-leiðum. Þegar nær dregur birtist veðurspá fyrir dagleiðirnar, og í síma má nota staðsetningu til að sjá hvar maður er og hvað er langt eftir í næsta áfangastað.</p>
+    </div>
   </div>
   <div class="legend" aria-hidden="true">
     <div><span class="swatch" style="background: var(--main)"></span>Þjórsá</div>
@@ -1233,6 +1271,24 @@
       document.getElementById('tripKm').textContent = DATA.trip.totalKm.toFixed(1);
     }
 
+    const aboutToggle = document.getElementById('aboutToggle');
+    const aboutModal = document.getElementById('aboutModal');
+    const aboutClose = document.getElementById('aboutClose');
+
+    function openAbout() {
+      if (!aboutModal) return;
+      aboutModal.hidden = false;
+      aboutToggle?.setAttribute('aria-expanded', 'true');
+      aboutClose?.focus();
+    }
+
+    function closeAbout() {
+      if (!aboutModal) return;
+      aboutModal.hidden = true;
+      aboutToggle?.setAttribute('aria-expanded', 'false');
+      aboutToggle?.focus();
+    }
+
     const mobileQuery = window.matchMedia('(max-width: 840px)');
     const sidePanel = document.getElementById('sidePanel');
     const sheetToggle = document.getElementById('sheetToggle');
@@ -1464,6 +1520,15 @@
         window.setTimeout(() => map.invalidateSize(), 120);
       });
     }
+
+    aboutToggle?.addEventListener('click', openAbout);
+    aboutClose?.addEventListener('click', closeAbout);
+    aboutModal?.addEventListener('click', event => {
+      if (event.target === aboutModal) closeAbout();
+    });
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && aboutModal && !aboutModal.hidden) closeAbout();
+    });
 
     document.getElementById('showMain').addEventListener('change', e => { layerState.main = e.target.checked; refreshRivers(); renderFalls(); });
     document.getElementById('showTrib').addEventListener('change', e => { layerState.tributary = e.target.checked; refreshRivers(); renderFalls(); });
